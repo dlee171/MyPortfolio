@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    
+    <!-- header -->
+    <div class="header">
+        <!-- <i class="fas fa-bars"></i> -->
+        <div class="menu">
+            <h1>Dahye Lee</h1>
+            <div class="weather-container">
+                <h3 class="weather"><span class="temp">0°</span> @ <span class="city">Toronto</span></h3>
+            </div>
+            <nav class="nav">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="">HOME</a></li>
+                    <li class="menu-item"><a href="#about">ABOUT</a></li>
+                    <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li class="menu-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="myself">
+                <figure class="photo" style="background-image: url('images/me.jpeg');"></figure>
+                <p class="myself-jobtitle">FRONT-END DEVELOPER</p>
+                <p class="myself-name">DAHYE LEE</p>
+                <div class="btns">
+                    <button class="btn-1"><a href="https://www.linkedin.com/feed/">LinkedIn</a></button>
+                    <button class="btn-2"><a href="https://github.com/dlee171/webfinal.git">GitHub</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Home -->
+    <div class="home" id="about">
+        <div class="home-parts">
+            <div class="home-part1">
+                <h1>WORKING WITH DAHYE</h1>
+                <p>I have extensive experience in diverse work environments, ranging from customer service to marketing. I am comfortable utilizing SQL, HTML, CSS, JavaScript, and Node.js when I implementing web services and web apps. I am a very enthusiastic, and responsible!!</p>
+            </div>
+    
+            <div class="home-part2">
+                <div class="sectionA">
+                    <img src="images/designer.svg">
+                    <h3>Programming Languages</h3>
+                    <p>C, C++, JAVASCRIPT, Java, SQL</p>
+                </div>
+                <div class="sectionB">
+                    <img src="images/frontend.svg">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, Bootstrap, Node.js, JSON</p>
+                </div>
+                <div class="sectionC">
+                    <img src="images/mentor.svg">
+                    <h3>Database</h3>
+                    <p>MY SQL, Mongo DB</p>
+                    <h3>Operating Systems</h3>
+                    <p>Mac, Windows, Unix/Linux, IBMi</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="skills-container">
+            <div class="skills">
+                <h1>SKILLS</h1>
+                <p>I am comfortable utilizing SQL, HTML, CSS, JavaScript, and Node.js when I implementing web services and web apps.</p>
+            </div>
+            <div class="skills-list">
+                <ul class="skills-item">
+                    <li>
+                        <p class="bar-lable">C, C++</p>
+                        <div class="bar">
+                            <div class="bar-common bar-C"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="bar-lable">JAVASCRIPT</p>
+                        <div class="bar">
+                            <div class="bar-common bar-javs"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="bar-lable">JAVA</p>
+                        <div class="bar">
+                            <div class="bar-common bar-java"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="bar-lable">HTML/CSS</p>
+                        <div class="bar">
+                            <div class="bar-common bar-html"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="bar-lable">SQL</p>
+                        <div class="bar">
+                            <div class="bar-common bar-sql"></div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="port-container">
+            <div class="ports">
+                <h1>PORTFOLIO</h1>
+                <p>Here are a few project I've worked on recently. Want to see? Click it!!</p>
+            </div>
+
+            <div class="web-container">
+                <ul class="web-list">
+                    <li>
+                        <a href="https://dahyemypethouse.netlify.app/">
+                            <img class="port-image" src="images/page1.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://hidden-cliffs-71914.herokuapp.com">
+                            <img class="port-image" src="images/page2.png" alt="">
+                        </a>
+                    </li>
+                    <!-- <a href="https://hidden-cliffs-71914.herokuapp.com">
+                        <img class="port-image" src="images/3.jpeg" alt="">
+                    </a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <div class="contact-container">
+            <div class="cont">
+                <h1>I'm Happy To Hear From You</h1>
+            </div>
+            <form action="">
+                <div class="cont-row">
+                    <label class="cont-label" for="">NAME</label>
+                    <input class="cont-name" type="text" placeholder="Name">
+                </div>
+                <div class="cont-row">
+                    <label class="cont-label" for="">E-MAIL</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="cont-row">
+                    <label class="cont-label" for="">DETAILS</label>
+                    <textarea name="" id="cont-detail"></textarea>
+                </div>
+                <div class="cont-row">
+                    <label class="cont-label" for=""></label>
+                    <div class="cont-row-temp">
+                        <button class="send-btn">Send</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>Copyright ©️ 2021 by Dahye Lee. All rights reserved.</p>
+        
+    </footer>
+
+    <script>
+        const temp = document.querySelector('.temp');
+        const city = document.querySelector('.city');
+
+        console.log(1);
+            function showPosition(position) {
+                // console.log(position);
+                console.log(position.coords.latitude);
+                console.log(position.coords.longitude);
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=9c296b81ccbb3aa80a20bbadffaf55dd&units=metric`)
+
+                .then(function(response) {
+                return response.json();
+                })
+                .then(function(json) {
+                    console.log(json);
+                    const curTemp = json.main.temp;
+                    const curCity = json.name;
+                    temp.innerHTML = curTemp;
+                    city.innerHTML = curCity;
+                });
+                }
+                navigator.geolocation.getCurrentPosition(showPosition);
+                console.log(2);
+
+        const sendBtn = document.querySelector('.send-btn');
+        sendBtn.addEventListener('click', function(){
+            event.preventDefault();
+            const detail = document.querySelector('#cont-detail');
+            const name = document.querySelector('.cont-name');
+
+            window.location.href = `mailto:dlee171@myseneca.ca?body=${detail.value}&subject=Hello, I am ${name.value}`;
+        });
+        
+
+    </script>
+
+</body>
+</html>

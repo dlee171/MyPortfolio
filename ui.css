@@ -1,0 +1,355 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/mac.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* cover = 사이즈꽉차게 */
+
+}
+.menu {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -3em;
+    margin-bottom: 3em;
+}
+.menu h1 {
+    text-transform: uppercase;
+}
+.nav {
+    display: none;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-item {
+    padding-right: 1em;
+    color: white;
+}
+
+.main {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* width: 80%; */
+}
+
+
+.myself {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.myself-name {
+    display: none;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    flex-shrink: 0;
+    margin-bottom: 2em;
+}
+.myself p {
+    font-size: 30px;
+}
+.myself-jobtitle {
+    margin-bottom: 0.5em;
+}
+.btn-1, .btn-2 {
+    border: 2px solid hotpink;
+    border-radius: 0.5em;
+    font-size: 20px;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+}
+.btn-1 a:link, .btn-1 a:visited, .btn-2 a:link, .btn-2 a:visited {
+    text-decoration: none;
+    color: white;
+}
+.btn-1 {
+    color: white;
+    background-color: hotpink;
+    margin-right: 1em;
+    transition: 0.5s;
+}
+.btn-2 {
+    color: hotpink;
+    transition: 0.5s;
+}
+.btn-1:hover {
+    color: hotpink;
+    background-color: transparent;
+    /* 백그라운드 투명하게 */
+}
+.btn-2:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+
+
+/* Home */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 한페이지로 만들기 */
+}
+
+.home-part1, .skills, .ports, .cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.home-part1 h1, .skills h1, .ports h1, .cont h1 {
+    margin-bottom: 2em;
+}
+.home-part1 h1:after, .skills h1:after, .ports h1:after, .cont h1:after {
+    /* 아래 선긋기 */
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    /* 자기자신을 중간으로 (마진 좌우 오토로) */
+    margin-top: 0.5em;
+}
+.home-part1 p, .skills p, .ports p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.home-part2 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.home-part2 p {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.5em;
+}
+
+.sectionA, .sectionB, .sectionC {
+    margin-bottom: 2em;
+}
+.home-part2 img, .home-part2 h3 {
+    margin-bottom: 1em;
+}
+.sectionC p {
+    margin-bottom: 1em;
+}
+
+
+/* About */
+.about {    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.bar-common {
+    height: 20px;
+    border-radius: 10px;
+    background-color: hotpink;
+}
+.bar-C {
+    width: 70%;
+}
+.bar-javs {
+    width: 90%;
+}
+.bar-java {
+    width: 60%;
+}
+.bar-html {
+    width: 90%;
+}
+.bar-sql {
+    width: 60%;
+}
+.skills-item li {
+    margin-bottom: 1em;
+}
+.skills-list {
+    width: 60%;
+    margin: 0 auto;
+}
+.bar-lable {
+    margin-bottom: 0.5em;
+}
+.skills-container {
+    width: 100%;
+}
+
+
+
+/* Portfolio */
+.portfolio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.port-container {
+    width: 100%;
+}
+.web-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.web-list {
+    width: 40%;
+    margin-bottom: 1em;
+    position: relative;
+}
+.port-image {
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* Contact */
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.contact-container {
+    width: 100%;
+}
+
+.cont-label {
+    display: inline-block;
+    width: 100px;
+}
+input, textarea {
+    display: inline-block;
+    width: 300px;
+    border-radius: 0.3em;
+    border: 0;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+.cont-row {
+    display: flex;
+    margin-bottom: 0.5em;
+    height: 2em;
+    justify-content: center;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+textarea {
+    height: 100px;
+    padding: 1em 1em;
+}
+.cont-row:nth-child(3) {
+    height: 120px;
+}
+.cont-row button {
+    background-color: hotpink;
+    border-radius: 0.3em;
+    padding: 0 1em;
+    height: 100%;
+    color: white;
+}
+.cont-row-temp {
+    width: 300px;
+}
+
+
+
+
+
+
+.weather {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+}
+
+
+
+
+@media (min-width: 1000px) {
+
+    .nav {
+        display: flex;
+    }
+
+    .menu-item a:visited, .menu-item a:link {
+        color: white;
+        text-decoration: none;
+    }
+    .web-list {
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+    }
+    .web-list li{
+        width: 30%;
+    }
+    .home-part2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .sectionA, .sectionB, .sectionC {
+        width: 30%;
+    }
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
